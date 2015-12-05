@@ -1,4 +1,3 @@
-console.log('hi')
 window.AudioContext = window.AudioContext || window.webkitAudioContext
 var ac = new AudioContext()
 var synth = require('./')(ac)
@@ -8,5 +7,4 @@ console.log('hi')
 setInterval(function () {
 
   synth.start(ac.currentTime)
-  console.log('howdy')
 }, 500)
