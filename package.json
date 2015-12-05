@@ -1,0 +1,19 @@
+{
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js",
+    "build": "browserify demo.js -o bundle.js",
+    "watch": "watchify demo.js -o bundle.js --debug --verbose"
+  },
+  "devDependencies": {
+    "tape": "^4.2.2",
+    "web-audio-mock": "^0.1.9",
+    "browserify": "^11.0.1",
+    "watchify": "^3.3.1"
+  },
+  "dependencies": {
+    "a-d-s-r": "^1.0.2",
+    "make-distortion-curve": "^1.0.0"
+  }
+}
