@@ -1,11 +1,42 @@
-# web-audio-synth-template
+# DJ SNAZZY SNARE
 
-a template for building web audio synths in a browserify/npm fashion [based on this blog post](http://colewillsea.com/blog/publishing-synthesizers-to-npm.html)
+a noisy snazzy snare syntj, inspired and deeply guided by [Synthesising Drum Sounds with the Web Audio API by Chris Lowis](https://dev.opera.com/articles/drum-sounds-webaudio/)
 
-index.js contains a lot of boilerplate commented out code that you can use to yr leisure. 
-test.js contains a small test suite that tries to ensure that yr synth or FX is inter-operable with other web audio libraries.
+# USE IT
 
-If you don't like the choices I made in index.js, you can still just copy test.js into yr project and `npm install --save-dev tape`
+```
+var dss = require('dj-snazzy-snare')(yrAudioContext)
+dss.start(yrAudioContext.currentTime)
+// ok that was a p chill lil lo-fi distorted snare-ish sound, but what if...
+
+dss.update({freq: 1000}) // YEAH! MAKE SOME HARSHER NOISE
+dss.start(yrAudioContext.currentTime)
+```
+
+# SETTINGS:
+other things that can be controlled through the update method:
+
+```
+    settings: {
+      freq: 200, // for the triangle oscillator
+      noiseattack: 0.000001,
+      noisedecay: 0.000001,
+      noisesustain: 0.1175,
+      noiserelease: 0.125,
+      noisepeak: 0.425,
+      noisemid: 0.41215,
+      noiseend: 0.000001,
+      triattack: 0.0000001,
+      tridecay: 0.00000001,
+      trisustain: 0.1175,
+      trirelease: 0.125,
+      tripeak: 0.87,
+      trimid: 0.75,
+      triend: 0.000001
+    }
+```
+
+For everything else, just call `nodes()` on yr synth object to do more close to the metal manipulations
 
 
 # DEVELOPMENT

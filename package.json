@@ -15,5 +15,23 @@
   "dependencies": {
     "a-d-s-r": "^1.0.2",
     "make-distortion-curve": "^1.0.0"
-  }
+  },
+  "name": "dj-snazzy-snare",
+  "description": "a snazzy, noisy web audio snare drum",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wham-js/dj-snazzy-snare.git"
+  },
+  "keywords": [
+    "web audio",
+    "snare",
+    "noise",
+    "drum"
+  ],
+  "author": "Cole Willsea <coleww@gmail.com> (http://colewillsea.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wham-js/dj-snazzy-snare/issues"
+  },
+  "homepage": "https://github.com/wham-js/dj-snazzy-snare#readme"
 }
